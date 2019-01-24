@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/layout/styles/layout.css" type="text/css" />
+    <title>@ViewBag.Title</title>
+</head>
+    <body id="top">
+        <div class="wrapper col1">
+            <div id="topbar" class="clear">
+                <ul>
+                    <li><a href="#">Hôtels</a></li>
+                    <li><a href="#">Vols</a></li>
+                    <li><a href="#">Exursions</a></li>
+                    <li class="last"><a href="#">Campagnie</a></li>
+                </ul>
+                <form action="#" method="post" id="search">
+                    <fieldset>
+                        <legend>Site Search</legend>
+                        <input type="text" value="Search Our Website&hellip;" onfocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;" />
+                        <input type="image" id="go" src="/images/search.gif" alt="Search" />
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <!-- ####################################################################################################### -->
+        <div class="wrapper col2">
+            <div id="header" class="clear">
+                <div class="fl_left">
+                    <h1><a href="index.html">Hotels Reservation</a></h1>
+                    <p>Plateforme de réservation d'hotels en ligne</p>
+                </div>
+                <div id="topnav">
+                    <ul>
+                        <li class="last"><a href="pages/gallery.html">Gallery</a><span></span></li>
+                        <li><a href="pages/portfolio.html">Portfolio</a><span></span></li>
+                        <li>
+                            <a href="#">Destinations</a><span></span>
+                            <ul>
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <li><a href="#">Link 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pages/full-width.html">Missions</a><span></span></li>
+                        <li><a href="pages/style-demo.html">Travelling organization</a><span></span></li>
+                        <li class="active"><a href="index.html">Homepage</a><span></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ####################################################################################################### -->
+        <div class="wrapper col3">
+            <div id="featured_slide">
+                <!-- ####################################################################################################### Traitement s'effectue ici !!!!!-->
+                <div>
+                    @RenderBody()
+                </div>
+                <!-- ####################################################################################################### -->
+            </div>
+        </div>
+        <!-- ####################################################################################################### -->
+        <div class="wrapper col4">
+            <div id="container" class="clear">
+                <!-- ####################################################################################################### -->
+                <div id="shout" class="clear">
+                    <div class="fl_left">
+                        <h2>Need A Professional site for holidays' bookings ?</h2>
+                        <p>Why not try our services today, you won't regret your choice !</p>
+                    </div>
+                    <p class="fl_right"><a href="#contact">Contact Us Today</a></p>
+                </div>
+                </div>
+            </div>
+                <div class="wrapper">
+                    <div id="copyright" class="clear">
+                        <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="#">Domain Name</a></p>
+                        <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+                    </div>
+                </div>
+    
+</body>
+</html>
